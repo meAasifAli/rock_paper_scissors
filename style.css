@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  animation: shake ;
+}
+
+main .action-container button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #800080;
+  color: wheat;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+main .action-container button:hover {
+  background-color: rgba(140, 16, 159, 0.8);
+}
+
+main .action-container button:active {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+
+main .action-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.score-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rock button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #800080;
+  color: wheat;
+  border-radius: 15px;
+}
+.paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.paper button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #800080;
+  color: wheat;
+  border-radius: 15px;
+}
+
+.scissors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.scissors button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #800080;
+  color: wheat;
+  border-radius: 15px;
+}
+
+#reset {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: wheat;
+  border-radius: 15px;
+}
