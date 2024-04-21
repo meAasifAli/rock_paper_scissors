@@ -4,6 +4,7 @@ let paperBtn = document.getElementById("paper");
 let scissorsBtn = document.getElementById("scissors");
 let result = document.getElementById("result")
 let restartBtn = document.getElementById("restart")
+let movesText = document.getElementById("moves-text")
 
 
 let Score = 0
@@ -36,6 +37,9 @@ const handleRock = () => {
     movesLeft += 1
     document.getElementById("moves-left").innerHTML = `You have ${totalMoves - movesLeft} moves left`
     document.getElementById("moves-left").style.textAlign = "center"
+
+    movesText.innerText = `You Chose Rock | Computer Chose ${computerMove}`
+
     if (totalMoves < 0 || movesLeft > 9) {
         document.getElementById("moves-left").innerText = "You have No moves Left"
     }
@@ -68,6 +72,7 @@ const handlePaper = () => {
     let computerMove = moves[randomNum];
     movesLeft += 1
     document.getElementById("moves-left").innerHTML = `You have ${totalMoves - movesLeft} moves left`
+    movesText.innerText = `You Chose Paper | Computer Chose ${computerMove}`
 
     if (totalMoves < 0 || movesLeft > 9) {
         document.getElementById("moves-left").innerText = "You have No moves Left"
@@ -98,6 +103,8 @@ const handleScissors = () => {
     let computerMove = moves[randomNum];
     movesLeft += 1
     document.getElementById("moves-left").innerHTML = `You have ${totalMoves - movesLeft} moves left`
+    movesText.innerText = `You Chose Scissors | Computer Chose ${computerMove}`
+
     if (totalMoves < 0 || movesLeft > 9) {
         document.getElementById("moves-left").innerText = "You have No moves Left"
     }
